@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>正能量打卡</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Crect width='1024' height='1024' rx='200' fill='%23111827'/%3E%3Crect x='200' y='220' width='380' height='520' rx='36' fill='%23f8fafc'/%3E%3Crect x='360' y='480' width='400' height='60' rx='16' fill='%23e2e8f0'/%3E%3C/svg%3E" />
+    <style>
+      *{box-sizing:border-box}
+      body{margin:0;background:#f8fafc;color:#0f172a;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial}
+      .wrap{max-width:960px;margin:0 auto;padding:16px}
+      .card{background:#fff;border:1px solid #e5e7eb;border-radius:16px;box-shadow:0 4px 20px rgba(2,6,23,.04)}
+      .row{display:flex;gap:12px;align-items:center}
+      .btn{border:1px solid #cbd5e1;background:#0f172a;color:#fff;border-radius:12px;padding:10px 14px;font-weight:600;cursor:pointer}
+      .btn.ghost{background:#fff;color:#0f172a}
+      .btn.secondary{background:#e2e8f0;color:#0f172a;border-color:#e2e8f0}
+      input,select{height:40px;border:1px solid #cbd5e1;border-radius:10px;padding:0 10px}
+      .tabs{display:flex;gap:8px;margin:12px 0 16px}
+      .tab{padding:10px 12px;border-radius:12px;border:1px solid #cbd5e1;background:#fff;cursor:pointer}
+      .tab.active{background:#0f172a;color:#fff;border-color:#0f172a}
+      .title{display:flex;align-items:center;gap:10px;margin:8px 0 16px}
+      .muted{color:#64748b}
+      .badge{background:#f1f5f9;border:1px solid #e2e8f0;padding:2px 8px;border-radius:999px;font-size:12px}
+      .list{display:flex;flex-direction:column;gap:8px}
+      .item{display:flex;justify-content:space-between;align-items:center;padding:10px;border:1px solid #e5e7eb;border-radius:12px;background:#fff}
+      .progress{height:10px;background:#e2e8f0;border-radius:999px;overflow:hidden}
+      .progress>div{height:100%;background:#0ea5e9}
+      .grid{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px}
+      @media(min-width:800px){.grid{grid-template-columns:repeat(2,minmax(0,1fr));}}
+      .kpi{display:flex;gap:12px}
+      .kpi>div{flex:1}
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
